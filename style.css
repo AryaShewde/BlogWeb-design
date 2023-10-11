@@ -1,0 +1,584 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hole-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    width: -webkit-fill-available;
+    background-color: whitesmoke;
+    opacity: 0.9;
+    align-items: center;
+    height: 60px;
+}
+
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60rem;
+}
+
+.Navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Navbar ul li a:hover{
+    color: rgb(58, 57, 57);
+}
+
+.Navbar ul li a {
+    margin: 30px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    font-size: x-large;
+}
+
+.Navbar ul li {
+    list-style: none;
+}
+
+.nav-image img {
+    height: 4rem;
+}
+
+.header {
+    background-image: url("https://cdn.pixabay.com/photo/2014/09/10/00/59/mountains-440520_640.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 250px;
+}
+
+.divheader {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+}
+
+.divheader h1 {
+    font-size: 6.5rem;
+    padding-bottom: 1rem;
+    color: rgb(68, 255, 115);
+    font-family: math;
+    font-weight: 600;
+    letter-spacing: 8px;
+}
+.divheader h1 div {
+    font-size: 5rem;
+    color: white;
+    font-family: sans-serif;
+}
+@media screen and (max-width: 1280px) {
+    .header{
+        padding: 12vw;
+    }
+}
+@media screen and (max-width: 900px) {
+    .divheader h1{
+        font-size: 11vw;
+    }
+}
+@media screen and (min-width: 448px) {
+    .divheader h1{
+        font-size: 6.7vw;
+    }
+}
+
+.btn {
+    margin-top: 3rem;
+    padding: 9px;
+    width: 6rem;
+    background-color: black;
+    color: white;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+    transition: transform .2s;
+}
+.btn:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+}
+
+.blog h1 {
+    text-align: center;
+    margin: 1.5rem;
+
+    font-size: 50px;
+}
+
+.component {
+    display: flex;
+    flex-direction: column;
+    width: 58vw;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.component1 {
+    display: flex;
+    align-items: center;
+}
+
+.component1div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.component2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.component3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.component4 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.component5 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.componentimg {
+    width: 20rem;
+    border-radius: 14px;
+    box-shadow: 0 10px 36px -8px rgba(0, 0, 0,.7);
+    transition: 1.2s;
+}
+.componentimg:hover{
+    box-shadow: 0 10px 86px -8px rgba(0, 0, 0,.7);
+}
+
+.review {
+    /* background-color: rgb(113 113 129 / 7%); */
+    background-image: url("https://images.pexels.com/photos/6985045/pexels-photo-6985045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.review h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.reviewcomp {
+    box-shadow: 0px 0px 10px;
+    width: 19rem;
+    padding: 2rem;
+    border-radius: 16px;
+    margin: 2rem;
+    transition: 1.2s;
+    
+}
+.reviewcomp:hover{
+    box-shadow: 0 10px 46px -8px rgba(0, 0, 0,.7);
+}
+
+
+
+.reviewcomp img {
+    width: 4rem;
+    box-shadow: 0px 0px 5px;
+    border-radius: 50px;
+}
+
+.reviewrow {
+    display: flex;
+    flex-direction: row;
+}
+
+.reviewin {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact{
+    /* background-color: #fff9cf26; */
+    background-image: url("https://img.freepik.com/free-vector/blue-pink-halftone-background_53876-99004.jpg?w=360");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.incontact {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.incontact input {
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.incontact textarea {
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.footer {
+    background-color: rgb(0, 0, 0);
+    padding: 4rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.firstcol {
+    color: rgb(255, 255, 255);
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.firstcol h3 {
+    text-decoration: underline;
+}
+
+.firstcol ul li {
+    list-style: none;
+}
+
+.col1 {
+    width: 19rem;
+}
+
+.col2 {
+    width: 19rem;
+}
+
+.col1 h3 {
+    text-decoration: underline;
+}
+
+.col2 h3 {
+    text-decoration: underline;
+}
+
+.col2 li {
+    padding: 0.3rem;
+}
+
+.col1 li {
+    padding: 0.3rem;
+}
+
+.col2 li a {
+    width: 19rem;
+    text-decoration: none;
+    color: white;
+}
+
+.inarea {
+    margin-top: 12px;
+}
+
+.inarea span {
+    padding: 0.5rem;
+    width: 19rem;
+}
+
+.navbar {
+    display: none;
+}
+
+@media screen and (max-width: 1400px) {
+    .footer {
+        flex-direction: column;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .firstcol {
+        margin-bottom: 3rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+
+    .hole-navbar {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .reviewrow {
+        flex-direction: column;
+    }
+
+    .component {
+        width: 88vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .component1 {
+        flex-direction: column-reverse;
+    }
+
+    .component2 {
+        flex-direction: column-reverse;
+    }
+
+    .component3 {
+        flex-direction: column-reverse;
+    }
+    .component4 {
+        flex-direction: column-reverse;
+    }
+    .component5 {
+        flex-direction: column-reverse;
+    }
+
+    .incontact {
+        padding: 0;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .Navbar {
+        width: 0rem;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .Navbar ul {
+        flex-direction: column;
+    }
+
+    .Navbar ul li a {
+        font-size: 2rem;
+    }
+
+    .nav-image img {
+        height: 6rem;
+    }
+
+    .header {
+        padding: 34px;
+        padding-top: 7rem;
+    }
+
+    .divheader h1 {
+        font-size: 9vw;
+    }
+    .divheader h1 div{
+        font-size: 6.5vw;
+    }
+
+    .hole-navbar {
+        width: auto;
+    }
+
+    .navbar {
+        display: block;
+        margin-top: -27px;
+    }
+
+    .hole-navbar {
+        display: none;
+    }
+    #menu{
+        opacity: 0.8;
+    }
+    .component1div{
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .reviewcomp {
+        width: 50vw;
+    }
+
+    .footer {
+        font-size: 1rem;
+    }
+
+    .inarea span {
+        padding: 0.2rem;
+        width: 10rem;
+    }
+
+    .col1 {
+        width: 10rem;
+    }
+
+    .col2 {
+        width: 10rem;
+    }
+
+    .componentimg {
+        width: 15rem;
+    }
+}
+
+
+#menuToggle {
+    display: block;
+    position: fixed;
+    top: 50px;
+    padding-left: 20px;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle a {
+    text-decoration: none;
+    color: #232323;
+
+    transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+    color: tomato;
+}
+
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #cdcdcd;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+    position: fixed;
+    width: -webkit-fill-available;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked~ul {
+    transform: none;
+}
